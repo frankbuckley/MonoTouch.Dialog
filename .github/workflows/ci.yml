@@ -32,7 +32,7 @@ jobs:
           dotnet-version: "8.0.100-preview.6.23330.14"
 
       - name: Add GitHub Packages 'frankbuckley' Feed
-        run: dotnet nuget update source frankbuckley --username "frankbuckley" --password ${{ secrets.PACKAGES_TOKEN }} --store-password-in-clear-text --source "https://nuget.pkg.github.com/dsegroup/index.json" --configfile "./NuGet.config"
+        run: dotnet nuget update source frankbuckley --username "frankbuckley" --password ${{ secrets.PACKAGES_TOKEN }} --store-password-in-clear-text --source "https://nuget.pkg.github.com/frankbuckley/index.json" --configfile "./NuGet.config"
 
       - name: Install workloads
         run: dotnet workload install ios maccatalyst
