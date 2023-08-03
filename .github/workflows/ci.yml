@@ -45,5 +45,5 @@ jobs:
 
       - name: Push Nuget Packages
         if: matrix.configuration == 'Release'
-        run: dotnet nuget push $pkg.FullName --source "frankbuckley" --api-key ${{ secrets.PACKAGES_TOKEN }} --skip-duplicate
+        run: Get-ChildItem *.nupkg -Recurse | ForEach-Object { &dotnet nuget push $_.FullName --source "frankbuckley" --api-key ${{ secrets.PACKAGES_TOKEN }} --skip-duplicate }
         shell: pwsh
