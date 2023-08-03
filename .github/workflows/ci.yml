@@ -31,6 +31,9 @@ jobs:
         with:
           dotnet-version: "8.0.100-preview.6.23330.14"
 
+      - name: Install workloads
+        run: dotnet workload install ios maccatalyst
+
       - name: Build
         run: dotnet build ./MonoTouch.Dialog/Dotnet.MonoTouch.Dialog.csproj -c ${{ matrix.configuration }}
 
