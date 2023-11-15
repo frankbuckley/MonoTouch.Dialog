@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+    <TargetFrameworks>net8.0-ios</TargetFrameworks>
     <OutputType>Library</OutputType>
     <RootNamespace>MonoTouch.Dialog</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
@@ -14,7 +14,7 @@
     <Owners>Miguel de Icaza</Owners>
     <Copyright>2009-2018 Miguel de Icaza</Copyright>
     <PackageTags>xamarin,ios,mac,xamarin.ios,xamarin.tvos,dialog</PackageTags>
-    <Description>Build of MonoTouch.Dialog for net8.0-ios and net8.0-maccatalyst</Description>
+    <Description>Build of MonoTouch.Dialog for net8.0-ios</Description>
     <RepositoryUrl>https://github.com/frankbuckley/MonoTouch.Dialog</RepositoryUrl>
   </PropertyGroup>
 
