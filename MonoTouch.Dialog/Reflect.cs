@@ -14,10 +14,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
-using System.Drawing;
 
 using UIKit;
-using Foundation;
 
 using NSAction = global::System.Action;
 

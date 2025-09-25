@@ -9,14 +9,10 @@
 // Code licensed under the MIT X11 license
 //
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Drawing;
 
 using UIKit;
 using CoreGraphics;
 using Foundation;
-using ObjCRuntime;
 
 using NSAction = global::System.Action;
 

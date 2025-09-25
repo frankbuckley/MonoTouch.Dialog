@@ -23,17 +23,12 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading;
 using System.Security.Cryptography;
 
 using Foundation;
 using UIKit;
-using CoreGraphics;
-
-using MonoTouch.Dialog.Utilities;
 
 namespace MonoTouch.Dialog.Utilities 
 {

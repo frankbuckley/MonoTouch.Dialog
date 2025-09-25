@@ -3,14 +3,9 @@
 // sample code for new elements. 
 //
 using System;
-using System.Drawing;
-using System.Threading;
-
-using CoreFoundation;
 using Foundation;
 using UIKit;
 using CoreGraphics;
-using ObjCRuntime;
 
 namespace MonoTouch.Dialog
 {

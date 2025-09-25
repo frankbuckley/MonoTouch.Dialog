@@ -1,15 +1,8 @@
 using System;
-using System.Drawing;
-using System.IO;
 using System.Reflection;
-using System.Runtime.InteropServices;
 
 using UIKit;
-using CoreGraphics;
 using Foundation;
-using CoreAnimation;
-
-using MonoTouch.Dialog.Utilities;
 
 namespace MonoTouch.Dialog
 {

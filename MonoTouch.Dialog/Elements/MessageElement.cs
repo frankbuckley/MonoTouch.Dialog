@@ -1,10 +1,8 @@
 using System;
-using System.Drawing;
 
 using UIKit;
 using Foundation;
 using CoreGraphics;
-using ObjCRuntime;
 
 namespace MonoTouch.Dialog {
 
