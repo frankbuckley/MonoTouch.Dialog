@@ -1,0 +1,7 @@
+<Project>
+
+    <PropertyGroup>
+        <NoWarn>$(NoWarn);XCODE_26_0_PREVIEW</NoWarn>
+    </PropertyGroup>
+
+</Project>

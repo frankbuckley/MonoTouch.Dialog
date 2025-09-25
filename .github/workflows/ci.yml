@@ -3,14 +3,12 @@ name: CI Build
 on:
   push:
     branches:
-      - net8.0
+      - net9.0
 
 jobs:
-
   build_test_ios:
-
     name: Build and Package
-    
+
     strategy:
       matrix:
         os: [macos-latest]
@@ -19,17 +17,16 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0 # avoid shallow clone
 
       - name: Set .NET SDK version
         if: contains(matrix.os, 'self-hosted') == false
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
-          dotnet-version: "8.0.400"
+          global-json-file: ./global.json
 
       - name: Add GitHub Packages 'frankbuckley' Feed
         run: dotnet nuget update source frankbuckley --username "frankbuckley" --password ${{ secrets.PACKAGES_TOKEN }} --store-password-in-clear-text --source "https://nuget.pkg.github.com/frankbuckley/index.json" --configfile "./NuGet.config"
