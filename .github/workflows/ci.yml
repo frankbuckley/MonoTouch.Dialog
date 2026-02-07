@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0 # avoid shallow clone
 
@@ -28,8 +28,8 @@ jobs:
         with:
           global-json-file: ./global.json
 
-      - name: Add GitHub Packages 'frankbuckley' Feed
-        run: dotnet nuget update source frankbuckley --username "frankbuckley" --password ${{ secrets.PACKAGES_TOKEN }} --store-password-in-clear-text --source "https://nuget.pkg.github.com/frankbuckley/index.json" --configfile "./NuGet.config"
+      - name: Add GitHub Packages 'dseinternational' Feed
+        run: dotnet nuget update source dseinternational --username "dseinternational" --password ${{ secrets.PACKAGES_TOKEN }} --store-password-in-clear-text --source "https://nuget.pkg.github.com/dseinternational/index.json" --configfile "./NuGet.config"
 
       - name: Install workloads
         run: dotnet workload install ios maccatalyst
@@ -42,5 +42,5 @@ jobs:
 
       - name: Push Nuget Packages
         if: matrix.configuration == 'Release'
-        run: Get-ChildItem *.nupkg -Recurse | ForEach-Object { &dotnet nuget push $_.FullName --source "frankbuckley" --api-key ${{ secrets.PACKAGES_TOKEN }} --skip-duplicate }
+        run: Get-ChildItem *.nupkg -Recurse | ForEach-Object { &dotnet nuget push $_.FullName --source "dseinternational" --api-key ${{ secrets.PACKAGES_TOKEN }} --skip-duplicate }
         shell: pwsh
