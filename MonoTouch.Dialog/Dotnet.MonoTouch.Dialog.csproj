@@ -9,13 +9,13 @@
     <PackageId>Dotnet.MonoTouch.Dialog</PackageId>
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <Version>9.0.1</Version>
+    <Version>9.0.3</Version>
     <Authors>Miguel de Icaza</Authors>
     <Owners>Miguel de Icaza</Owners>
     <Copyright>2009-2018 Miguel de Icaza</Copyright>
     <PackageTags>xamarin,ios,mac,xamarin.ios,xamarin.tvos,dialog</PackageTags>
     <Description>Build of MonoTouch.Dialog for net9.0-ios</Description>
-    <RepositoryUrl>https://github.com/frankbuckley/MonoTouch.Dialog</RepositoryUrl>
+    <RepositoryUrl>https://github.com/dseinternational/MonoTouch.Dialog</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup>
